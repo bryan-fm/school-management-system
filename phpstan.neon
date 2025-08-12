@@ -1,0 +1,19 @@
+includes:
+  - vendor/phpstan/phpstan/conf/bleedingEdge.neon
+
+parameters:
+  level: 8
+
+  paths:
+    - .
+
+  excludePaths:
+    - vendor/*
+    - tests/*
+
+  inferPrivatePropertyTypeFromConstructor: true
+  reportUnmatchedIgnoredErrors: false
+
+  ignoreErrors:
+    - '#Call to an undefined method Illuminate\\.*#'
+    - '#Access to an undefined property Illuminate\\.*#'

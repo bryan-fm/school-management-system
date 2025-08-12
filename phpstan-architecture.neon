@@ -1,0 +1,14 @@
+services:
+  -
+    class: Ecotone\PhpStan\Rules\DisallowAccessToLayerRule
+    tags: [phpstan.rules.rule]
+    arguments:
+      - layer: "Controller"
+        path: "src/Controller/*"
+      - layer: "Service"
+        path: "src/Service/*"
+      - layer: "Repository"
+        path: "src/Repository/*"
+      - disallowedAccess:
+          - from: "Controller"
+            to: "Repository"

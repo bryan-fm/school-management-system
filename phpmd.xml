@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ruleset name="Custom ruleset">
+  <description>Meu conjunto de regras para refatoração.</description>
+
+  <rule ref="cleancode" />
+  <rule ref="codesize" />
+  <rule ref="naming" />
+  <rule ref="unusedcode" />
+  <rule ref="design" />
+</ruleset>
